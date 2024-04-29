@@ -3,7 +3,8 @@ body {
 }
 
 header,
-main, footer {
+main,
+footer {
   max-width: 460px; /* Máximo width*/
   margin: 1rem auto; /* Centrar página*/
   background: #669bbc;
@@ -21,4 +22,9 @@ main {
 section {
   padding: 1rem;
   background-color: #fff;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
 }
