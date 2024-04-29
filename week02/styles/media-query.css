@@ -1,0 +1,24 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+header,
+main, footer {
+  max-width: 460px; /* Máximo width*/
+  margin: 1rem auto; /* Centrar página*/
+  background: #669bbc;
+  border: 1px solid rgba(0, 0, 0, 0.1); /* los 3 primeros son el color del rgba y el último la opacidad */
+  padding: 1rem;
+  background-color: #e6f2ff;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+section {
+  padding: 1rem;
+  background-color: #fff;
+}

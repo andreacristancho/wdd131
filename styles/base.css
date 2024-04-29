@@ -10,7 +10,7 @@ header {
   background-color: #184e77;
   align-items: center;
   justify-content: center;
-  padding: 30px;
+  gap: 50px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -21,6 +21,11 @@ main {
   margin: 0 auto;
   color: white;
   text-align: center;
+}
+
+header h1 {
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 h2 {
@@ -45,9 +50,8 @@ nav a {
   text-align: center;
   padding: 1rem;
   text-decoration: none;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1.3rem;
-  
 }
 
 nav a:hover {
@@ -105,7 +109,6 @@ main {
   color: black;
   text-align: left;
   padding: 20px;
-  
 }
 
 .inside-card1 p {
