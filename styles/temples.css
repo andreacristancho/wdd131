@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header,
+nav {
+  display: flex;
+  flex-direction: row;
+  background-color: #003049;
+  
+}
+
+main h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  border-radius: 5px rgb(138, 134, 134);
+  text-align: center;
+  padding: 40px;
+  color: #306180;
+}
+
+main figure {
+  margin: 30px;
+}
+h1 {
+  font-size: 2.5rem;
+  background-color: #003049;
+  color: white;
+  padding: 5%;
+}
+
+nav {
+  max-width: 70%;
+  margin: 1rem auto;
+  list-style: none;
+}
+
+#menu {
+  font-size: 1.5rem;
+  border: 0;
+  background: none;
+  color: grey;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+#menu::before {
+  content: "☰";
+}
+
+#menu.open::before {
+  content: "❎";
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  width: 100vh;
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+}
+nav a {
+  display: none;
+  padding: 5px;
+  flex-direction: column;
+  margin: 10px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+nav a:hover {
+  background-color: #457b9d;
+  color: #f1faee;
+}
+
+.open a {
+  display: block;
+  color: #fca311;
+}
+
+.active::before {
+  content: "📍";
+}
+
+.figures figcaption {
+  text-align: center;
+}
+footer {
+  background-color: #003049;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+  row-gap: 25px;
+  font-size: 1.2rem;
+}
+#lastModified {
+  padding-top: 10px;
+  color: rgb(249, 196, 64);
+}
