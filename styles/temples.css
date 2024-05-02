@@ -9,14 +9,14 @@ nav {
   display: flex;
   flex-direction: row;
   background-color: #003049;
-  
+  width: 100%;
 }
 
 main h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 600;
   font-size: 2rem;
-  border-radius: 5px rgb(138, 134, 134);
+  border-radius: 5px;
   text-align: center;
   padding: 40px;
   color: #306180;
