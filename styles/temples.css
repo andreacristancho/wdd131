@@ -38,7 +38,7 @@ nav {
   list-style: none;
 }
 
-#menu {
+button#menu {
   font-size: 1.5rem;
   border: 0;
   background: none;

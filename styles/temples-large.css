@@ -1,5 +1,5 @@
 @media (min-width: 499px) {
-  #menu {
+  button#menu {
     display: none;
   }
 
