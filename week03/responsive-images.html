@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <!-- Cód para imágenes responsivas. Requiere adicional en CSS -->
+      <div clase="hero">
+        <picture>
+          <source srcset="styles/hero-large.webp" media="(min-width: 1000px)" />
+          <source srcset="styles/hero-medium.webp" media="(min-width: 500px)" />
+
+          <picture>
+            <source srcset="styles/hero-large.webp" media="min-width: 1000px" />
+            <source srcset="styles/hero-medium.webp" media="min-width: 550px" />
+            <!-- Este cód traía la clase pero no me funciona
+            <img
+              src="styles/hero-small.webp"
+              alt="Bogotá Temple"
+              width="500"
+              height="313"
+            /> -->
+
+
+            <img
+              src="styles/hero-large.webp"
+              srcset="styles/hero-small.webp 500w, styles/hero-medium.webp 1000w"
+              size="50vw"
+            />
+          </picture>
+      </div>
+    </main>
+  </body>
+</html>

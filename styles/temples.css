@@ -39,10 +39,10 @@ nav {
 }
 
 button#menu {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   border: 0;
   background: none;
-  color: grey;
+  color: white;
   position: absolute;
   top: 1rem;
   right: 1rem;
