@@ -1,0 +1,130 @@
+:root {
+  --color-primary: #d02525;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header,
+footer {
+  background-color: var(--color-primary);
+  align-items: center;
+  justify-content: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2.7rem;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  unicode-bidi: isolate;
+  background-color: var(--color-primary);
+}
+
+.green {
+  background-color: #116905;
+  height: 15px;
+}
+
+picture img {
+  width: 100%;
+}
+
+section .white-background {
+  display: block;
+  padding-left: 0;
+  padding: 0;
+  margin: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 15px;
+}
+div .cards {
+  display: block;
+  padding-left: 0;
+  padding: 0;
+  margin: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 15px;
+}
+
+
+section .white-background {
+  display: block;
+  unicode-bidi: isolate;
+}
+div .row {
+  display: flex;
+  gap: 0.5rem;
+}
+
+div .name {
+  text-align: right;
+  padding-left: 100px;
+}
+
+div .value {
+  text-align: left;
+}
+
+.white-background {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+figure img {
+  width: 100%;
+}
+
+div .cards1 {
+  display: block;
+  padding-left: 0;
+  padding: 0;
+  margin: auto;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-size: 15px;
+}
+.bold {
+  font-weight: 600;
+}
+section h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(79, 76, 76);
+  padding: 30px;
+}
+
+footer {
+  background-color: #d02525;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border: 1px solid #b90404;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+  row-gap: 25px;
+  font-size: 1.2rem;
+}
+
+footer p {
+  background-color: #d02525;
+}
+
+
+@media (min-width:1000px) {
+
+
+}

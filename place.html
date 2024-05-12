@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Country</title>
+    <meta
+      name="description"
+      content="Country-WDD 131 - Dynamic Web Fundamentals"
+    />
+    <meta name="author" content="Andrea Fernanda Cristancho Cortés" />
+    <link rel="stylesheet" href="styles/place.css" />
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+  </head>
+  <body>
+
+    <header><h1>Colombia</h1></header>
+    <div class="green"></div>
+    <main>
+      <div>
+        <picture>
+          <source
+            srcset="styles/Colombia_horizontal.webp"
+            media="min-width: 1000px"
+          />
+          <source
+            srcset="styles/SanAndres_vertical.webp"
+            media="max-width: 1000px"
+          />
+          <img
+            src="styles/Colombia_vertical_999.webp"
+            srcset="
+              styles/SanAndres_vertical.webp   500w,
+              styles/Colombia_horizontal.webp 1000w
+            "
+            size="100vw"
+          />
+        </picture>
+      </div>
+
+      <section class="white-background">
+        <div class="cards">
+          <h2>Data</h2>
+
+          <picture>
+            <source srcset="srcset">
+
+          </picture>
+
+          <div class="row">
+            <div class="name">Area:</div>
+            <div class="value">1.138.910 sqr kms</div>
+          </div>
+
+          <div class="row">
+            <div class="name">Population:</div>
+            <div class="value">51.609.000</div>
+          </div>
+
+          <div class="row">
+            <div class="name">Capital:</div>
+            <div class="value">Bogotá</div>
+          </div>
+
+          <div class="row">
+            <div class="name">Language:</div>
+            <div class="value">Spanish</div>
+          </div>
+
+          <div class="row">
+            <div class="name">Currency:</div>
+            <div class="value">Colombian Peso COP</div>
+          </div>
+
+          <div class="row">
+            <div class="name">Calling Code:</div>
+            <div class="value">+57s</div>
+          </div>
+
+          <div class="row">
+            <div class="name">Internet TDL:</div>
+            <div class="value">.co</div>
+          </div>
+        </div>
+
+
+
+          <div class="cards">
+            <h2>Weather</h2>
+
+            <figure>
+              <img
+                src="styles/weather_icon.svg"
+                alt="Weather Icon"
+              />
+            </figure>
+  
+            <div class="row">
+              <div class="name">Temperature:</div>
+              <div class="value">1.138.910 sqr kms</div>
+            </div>
+  
+            <div class="row">
+              <div class="name">Conditions:</div>
+              <div class="value">51.609.000</div>
+            </div>
+  
+            <div class="row">
+              <div class="name">Wind:</div>
+              <div class="value">Bogotá</div>
+            </div>
+  
+            <div class="row">
+              <div class="name">Wind Chill:</div>
+              <div class="value">Spanish</div>
+            </div>
+      </section>
+    </main>
+
+
+    <footer>
+      <p>
+        <span id="currentyear"></span>
+        Andrea Fernanda Cristancho. Colombia
+      </p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>
+
