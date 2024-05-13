@@ -79,6 +79,11 @@ figure img {
 
 }
 
+.card-weather h2::after {
+  content:"  ⛅︎";
+  
+}
+
 section .white-background  {
   align-items: center;
   align-content: center;
@@ -176,7 +181,7 @@ footer p {
 
 }
 
-#icon {
+img#icon {
   display: none;
 }
 
