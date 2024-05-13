@@ -12,113 +12,58 @@
     <meta name="author" content="Andrea Fernanda Cristancho Cortés" />
     <link rel="stylesheet" href="styles/place.css" />
     <script src="scripts/place.js" defer></script>
-    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/place.js" defer></script>
   </head>
+
   <body>
 
     <header><h1>Colombia</h1></header>
     <div class="green"></div>
     <main>
-      <div>
+      <div class="photo">
         <picture>
-          <source
-            srcset="styles/Colombia_horizontal.webp"
-            media="min-width: 1000px"
-          />
-          <source
-            srcset="styles/SanAndres_vertical.webp"
-            media="max-width: 1000px"
-          />
-          <img
-            src="styles/Colombia_vertical_999.webp"
-            srcset="
-              styles/SanAndres_vertical.webp   500w,
-              styles/Colombia_horizontal.webp 1000w
-            "
-            size="100vw"
-          />
+          <source media="(min-width:1000px)" srcset="images/Colombia_horizontal_1200.webp">
+          <source media="(min-width:500px)" srcset="images/Colombia_horizontal_1000.webp">
+          <img src="images/Colombia_vertical_500px.webp" alt="Colombia Image">
         </picture>
       </div>
 
       <section class="white-background">
-        <div class="cards">
+        
+        <div class="card-data">
           <h2>Data</h2>
-
-          <picture>
-            <source srcset="srcset">
-
-          </picture>
-
-          <div class="row">
-            <div class="name">Area:</div>
-            <div class="value">1.138.910 sqr kms</div>
-          </div>
-
-          <div class="row">
-            <div class="name">Population:</div>
-            <div class="value">51.609.000</div>
-          </div>
-
-          <div class="row">
-            <div class="name">Capital:</div>
-            <div class="value">Bogotá</div>
-          </div>
-
-          <div class="row">
-            <div class="name">Language:</div>
-            <div class="value">Spanish</div>
-          </div>
-
-          <div class="row">
-            <div class="name">Currency:</div>
-            <div class="value">Colombian Peso COP</div>
-          </div>
-
-          <div class="row">
-            <div class="name">Calling Code:</div>
-            <div class="value">+57s</div>
-          </div>
-
-          <div class="row">
-            <div class="name">Internet TDL:</div>
-            <div class="value">.co</div>
-          </div>
+          <table>
+            <tbody>
+              <tr><th>Country: </th><td>Colombia</td></tr>
+              <tr><th>Area: </th><td>1.138.910</td></tr>
+              <tr><th>Population: </th><td>51.609.000</td></tr>
+              <tr><th>Capital: </th><td>Bogotá</td></tr>
+              <tr><th>Language: </th><td>Spanish</td></tr>
+              <tr><th>Currency: </th><td>Colombian Peso COP</td></tr>
+              <tr><th>Calling code: </th><td>+57</td></tr>
+            </tbody>
+          </table>
         </div>
 
-
-
-          <div class="cards">
-            <h2>Weather</h2>
-
-            <figure>
-              <img
-                src="styles/weather_icon.svg"
-                alt="Weather Icon"
-              />
-            </figure>
-  
-            <div class="row">
-              <div class="name">Temperature:</div>
-              <div class="value">1.138.910 sqr kms</div>
-            </div>
-  
-            <div class="row">
-              <div class="name">Conditions:</div>
-              <div class="value">51.609.000</div>
-            </div>
-  
-            <div class="row">
-              <div class="name">Wind:</div>
-              <div class="value">Bogotá</div>
-            </div>
-  
-            <div class="row">
-              <div class="name">Wind Chill:</div>
-              <div class="value">Spanish</div>
-            </div>
+        <div class="card-weather">
+          <h2>Weather</h2>
+          <img id="icon" src="images/weather-img.svg" alt="Weather Image" width="100">
+          <table>
+            <tbody>
+          
+              <tr><th>Temperature: </th><td>27 C</td></tr>
+              <tr><th>Conditions: </th><td>Sunny</td></tr>
+              <tr><th>Wind: </th><td>13 km/h</td></tr>
+              <tr><th >Wind Chill: </th><td id="calculateWindChill"> °C</td></tr>
+            </tbody>
+          </table>
+        </div>
+        
       </section>
-    </main>
 
+    </main>
+   
+  </body>
 
     <footer>
       <p>

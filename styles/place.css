@@ -39,71 +39,74 @@ picture img {
   width: 100%;
 }
 
-section .white-background {
-  display: block;
-  padding-left: 0;
-  padding: 0;
-  margin: auto;
-  margin-left: 20px;
-  margin-right: 20px;
-  font-size: 15px;
-}
-div .cards {
-  display: block;
-  padding-left: 0;
-  padding: 0;
-  margin: auto;
-  margin-left: 20px;
-  margin-right: 20px;
-  font-size: 15px;
-}
 
+div table {
+  margin-left: auto;
+  margin-right: auto;
 
-section .white-background {
-  display: block;
-  unicode-bidi: isolate;
-}
-div .row {
-  display: flex;
-  gap: 0.5rem;
-}
-
-div .name {
-  text-align: right;
-  padding-left: 100px;
-}
-
-div .value {
-  text-align: left;
-}
-
-.white-background {
-  margin-left: 20px;
-  margin-right: 20px;
 }
 
 figure img {
   width: 100%;
 }
 
-div .cards1 {
+.white-background table th:first-child {
+  padding-left: 100px;
+  unicode-bidi: isolate;
+}
+.card-data, .card-weather  {
   display: block;
-  padding-left: 0;
-  padding: 0;
   margin: auto;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin: 30px;
   font-size: 15px;
+
 }
-.bold {
-  font-weight: 600;
-}
-section h2 {
+
+.card-data h2, .card-weather h2 {
   font-size: 1.5rem;
   text-align: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: rgb(79, 76, 76);
   padding: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  color: rgb(136, 131, 131);
+}
+
+.card-weather #icon {
+  display: block;
+  margin: auto;
+
+}
+
+section .white-background  {
+  align-items: center;
+  align-content: center;
+  
+  
+}
+section div table tbody th {
+  text-align: right;
+  padding-right: 5px;
+  
+}
+
+div table tbody tr {
+  display: table-row;
+  vertical-align: inherit;
+  unicode-bidi: isolate;
+  border-color: inherit;
+
+}
+
+table {
+  border-collapse: separate;
+  text-indent: initial;
+  
+}
+
+div .cards #icon {
+ align-content: center;
 }
 
 footer {
@@ -127,4 +130,58 @@ footer p {
 @media (min-width:1000px) {
 
 
+  .card-data, .card-weather {
+    background-color: whitesmoke;
+    padding-bottom: 20px;
+  }
+
+
+.card-data h2, .card-weather h2 {
+  font-size: 1.7rem;
+  text-align: left;
+  background-color: #116905;
+  color: white;
+  padding: 7px;
+  padding-left: 30px;
+  margin-top: 20px;
+  margin-left:-10px;
+  margin-bottom: 20px;
+  
 }
+
+.photo {
+  position: relative;
+ 
+  
+}
+
+.card-data {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  z-index: 2;
+  width: 30%;
+  font-size: 17px;
+  
+
+}
+
+.card-weather {
+  position: absolute;
+  top: 70%;
+  right: 5%;
+  z-index: 2;
+  width: 30%;
+  font-size: 17px;
+
+}
+
+#icon {
+  display: none;
+}
+
+
+
+}
+
+
