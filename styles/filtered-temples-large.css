@@ -1,0 +1,70 @@
+@media (min-width: 499px) {
+    button#menu {
+      display: none;
+    }
+  
+    header {
+      width: 100%;
+    }
+    header h1 {
+      font-size:4rem;
+      
+    }
+    nav {
+      width: 60%;
+      align-items: end;
+      row-gap: 50px;
+      margin: auto;
+      width: 100vh;
+      padding-right: 20px;
+    }
+  
+    nav ul {
+      display: flex;
+      flex-direction: row;
+      align-items: end;
+    }
+  
+    nav a {
+      display: flex;
+      color: #fca311;
+      font-size:2.5rem;
+      padding-right: 10%;
+    }
+  
+    main {
+      margin-left: auto;
+      margin-right: auto;
+      align-content: center;
+    }
+    main h2 {
+      grid-column: 1/4;
+      grid-row: 1/2;
+    }
+  
+    #temples {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto;
+    }
+    article {
+        margin: 15px;
+    }
+    footer {
+      font-size: 1.3rem;
+      margin-top: 20px;
+      
+    }
+
+    footer p {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    
+    }
+  
+
+
+  }
+
+
+  

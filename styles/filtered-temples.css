@@ -1,0 +1,181 @@
+:root {
+    --primary: #003049;
+    --secundary: #306180;
+    --transparent: #ffffff00;
+    
+    --headers-color: white;
+    --text-color: black;
+    --label-text: rgb(30, 100, 222);
+    --active: #fca311;
+  
+    --card-backgroud: #80808048;
+
+    --layout: solid 2px red;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  header,
+  nav {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--primary);
+    width: 100%;
+  }
+  
+  main h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    border-radius: 5px;
+    text-align: center;
+    padding: 40px;
+    color: #306180;
+  }
+  
+  main figure {
+    margin: 30px;
+  }
+  h1 {
+    font-size: 2.5rem;
+    background-color: #003049;
+    color: white;
+    padding: 5%;
+  }
+  
+  nav {
+    max-width: 70%;
+    margin: 1rem auto;
+    list-style: none;
+  }
+  
+  button#menu {
+    font-size: 1.7rem;
+    border: 0;
+    background: none;
+    color: white;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding-right: 10px;
+  }
+  
+  #menu::before {
+    content: "☰";
+  }
+  
+  #menu.open::before {
+    content: "❎";
+  }
+  
+  nav {
+    display: flex;
+    flex-direction: column;
+    width: 100vh;
+    color: white;
+  }
+  
+  nav ul {
+    list-style: none;
+  }
+  nav a {
+    display: none;
+    padding: 5px;
+    flex-direction: column;
+    margin: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+    
+  }
+  
+  nav a:hover {
+    background-color: #457b9d;
+    color: #f1faee;
+  }
+  
+  .open a {
+    display: block;
+    color: #fca311;
+  }
+  
+  .active::before {
+    content: "📍";
+  }
+  
+  .figures figcaption {
+    text-align: center;
+  }
+  footer {
+    background-color: #003049;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+
+    font-size: 1.2rem;
+  }
+  #lastModified {
+    padding-top: 10px;
+    color: rgb(249, 196, 64);
+  }
+
+  #temples article img {
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+}
+
+/*h3, pLocation, pDedication, pArea, picTemple*/
+
+article {
+
+    background-color: var(--card-backgroud);
+    margin-left: 5px;
+    margin-right:  5px;
+    border-radius: 5%;
+    text-align: center;
+    padding: 2px;
+    padding-top: 20px;
+    border-radius: 10px; /* Borde redondeado (opcional) */
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5); /* Sombra gris */
+
+
+}
+article h3 {
+color: var(--text-color);
+font-size: 1.5rem;
+text-align: center;
+padding-bottom: 15px;
+};
+
+
+article p {
+    text-align: center;
+    margin: 5px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    row-gap: 20px;
+    
+}
+
+
+article p .label {
+    color: var(--secundary);
+    font-style: italic;
+    
+    
+}
+
+article img {
+    margin: 10px 10px 20px 0;
+}
+
+
+
