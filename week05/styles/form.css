@@ -1,9 +1,3 @@
-/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
-html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
-
-/*----------- apply a natural box layout model to all elements --------------*/
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-
 
 /*----------- BODY --------------*/
 body {
@@ -98,7 +92,7 @@ form {
     padding: .8rem;
     width: 95%;
     max-width: 400px;
-    margin: -1rem 2% 2erem 2%;
+    margin: -1rem 2% 2rem 2%;
     box-shadow: 1px 1px 4px #999;
     
 
