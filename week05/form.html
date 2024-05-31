@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Fill Me In">
+<meta name="author" content="Andrea Cristancho">
+
+<!-- This start file was build by Andrea Cristancho  -->
+<title>Form Andrea Cristancho</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+<!-- STYLE SHEETS -->
+<link href="css/normalize.css" rel="stylesheet">
+<!-- phone-default -->
+<link href="styles/form.css" rel="stylesheet">
+<!-- enhance-tablet -->
+<link href="styles/form-large.css" rel="stylesheet">
+<!-- enhance-desktop -->
+
+<script src="scripts/form.js" defer></script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+     
+</head>
+<body>
+<!-- HEADER HERE -->
+<header>
+<h1>Product Review</h1>
+</header>
+    
+<!-- CONTENT HERE -->
+<main>
+ 
+    <form method = "get" action="review.html"  class="wf1">
+      
+      <fieldset>
+        <label for="productName"> Product Name</label>
+        <select id= "productName" name="ProductName" required>
+                
+          <option value="">Choose a product... &#9662;</option>  <!-- El &#... coloca la flechita de dropdown justo después de la palabra select --> 
+                
+        </select>
+    </fieldset>
+
+    <fieldset>
+       <div>Overall Rating</div>
+       <label> <input id= "audience" type="radio" name="audience" value="beginner">* </label>
+       <label> <input id= "audience" type="radio" name="audience" value="beginner">** </label>
+       <label> <input id= "audience" type="radio" name="audience" value="beginner">*** </label>
+       <label> <input id= "audience" type="radio" name="audience" value="beginner">**** </label>
+       <label> <input id= "audience" type="radio" name="audience" value="beginner">***** </label>
+    </fieldset>
+   
+
+    <fieldset>
+     <label for="date">Date of Installation:</label>
+    
+     <input type="text" id="date" name="date" placeholder="mm / dd / yyyy" required pattern="\d{2}/\d{2}/\d{4}">
+     </fieldset>
+
+
+   
+      <fieldset>
+        <legend>Wich features did you find useful in the product?
+          (Check all that apply)
+        </legend>
+          <label> <input id = "checkbox" type="checkbox" name="features" value="durability">Durability</label>
+          <label> <input id = "checkbox" type="checkbox" name="features" value="beautiful">Beautiful </label>
+          <label> <input id = "checkbox" type="checkbox" name="features" value="fashion">Fashion </label>
+          <label> <input id = "checkbox" type="checkbox" name="features" value="color-availability">Color availability </label>
+
+    </fieldset>
+
+
+    <fieldset>
+    <label for="feedback">Written review (Optional)</label>
+    <textarea id="feedback" name="feedback" rows="4" cols="50" required></textarea>
+    </fieldset>
+
+    <fieldset>
+
+    <label> Your Name (Optional) <input id= name type="text" name="name"></label>
+    
+  
+
+    <input type="submit" value="Post Review">
+
+    </form>      
+        
+    </main>
+    
+<!-- FOOTER HERE -->   
+
+<footer>
+  <p>
+    <span id="currentYear"></span>
+    Andrea Fernanda Cristancho. Colombia
+  </p>
+  <p id="lastModified"></p>
+</footer>
+</body>
+</html>
+

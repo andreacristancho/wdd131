@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms Exsmple</title>
+  
+    <link rel="stylesheet" href="styles/forms-example.css" />
+  
+    <script src="scripts/forms-exasmple.js" defer></script>
+    
+
+<form action="" method="get" class="form-example">
+  <div class="form-example">
+    <label for="name">Enter your name: </label>
+    <input type="text" name="name" id="name" required />
+  </div>
+  <div class="form-example">
+    <label for="email">Enter your email: </label>
+    <input type="email" name="email" id="email" required />
+  </div>
+  <div class="form-example">
+    <input type="submit" value="Subscribe!" />
+  </div>
+</form>
+
+<!--Example 2 -->
+
+<!-- Form which will send a GET request to the current URL -->
+<form method="get">
+    <label>
+      Name:
+      <input name="submitted-name" autocomplete="name" />
+    </label>
+    <button>Save</button>
+  </form>
+  
+  <!-- Form which will send a POST request to the current URL -->
+  <form method="post">
+    <label>
+      Name:
+      <input name="submitted-name" autocomplete="name" />
+    </label>
+    <button>Save</button>
+  </form>
+  
+  <!-- Form with fieldset, legend, and label -->
+  <form method="post">
+    <fieldset>
+      <legend>Do you agree to the terms?</legend>
+      <label><input type="radio" name="radio" value="yes" /> Yes</label>
+      <label><input type="radio" name="radio" value="no" /> No</label>
+    </fieldset>
+  </form>
+
+
+  <!--Example 3 -->
+
+  <li>
+    <label for="password">I would like my password to be:</label>
+    <p>(at least 6 characters, no spaces)</p>
+    <input type="password" id="password" name="password"
+           required title="(at least 6 characters, no spaces)" pattern="\S{6,}"> 
+</li>
+<!--Nota: pattern="\S{6,}": Define una expresión regular que el valor de entrada debe cumplir para ser válido.
+\S: Coincide con cualquier carácter que no sea un espacio en blanco.
+{6,}: Indica que deben haber al menos 6 caracteres. Combinado con \S, esto significa que la contraseña debe tener al menos 6 caracteres y ninguno de ellos puede ser un espacio. -->
+
+
+<!--Example 4 
+
+The readonly attribute is similar to the disabled attribute: it makes it impossible for the user to edit the form field. -->
+
+<label for="about">Article Title</label> 
+<input type="text" name="about" id="about" readonly 
+↵value="http://www.thehtml5herald.com/register.html">
+
+
+
