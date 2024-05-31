@@ -108,7 +108,13 @@ form {
     border-bottom: solid 8px green;
 }
 
+#name {
+    margin-bottom: 30px;
+}
 
+#submit {
+    font-size: 1.5rem;
+}
 #reviewCounter {
     font-size: 1.5rem;
 }
