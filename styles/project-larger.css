@@ -41,17 +41,20 @@
       }
 
     .main_part {
-        margin: auto;
+        margin: 100px;
     }
     .main_part .main_img {
         max-width: 45%;
         margin: 20px;
     }
 
-    .main_part .main_text {
+    .main_part .main_text  {
         max-width: 45%;
         margin: 20px;
+        font-size: 3rem;
     }
+
+ 
 
 
 
