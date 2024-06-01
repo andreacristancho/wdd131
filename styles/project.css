@@ -341,7 +341,7 @@ article img {
     margin-left: 10px;
     margin-right: 10px;
     width: 100%;
-
+  }
   
 
     th, td {
@@ -359,16 +359,17 @@ article img {
     thead {
         color: #fff;
         background: var(--primary);
+    }
 
-        th {
+    thead th {
             padding: 1rem;
             font-size: 1.5rem;
         }
 
-        tr:nth-last-child(1) {
+      tr:nth-last-child(1) {
             background-color: var(--secundary);
         }
-    }
+    
 
     tbody tr:nth-child(even) {
         background-color: #eee;
@@ -380,7 +381,7 @@ article img {
     .blank th {
       font-size: 1.2rem;
     }
-}
+  
 
 /* END PRODUCT PAGE */
 
@@ -459,7 +460,7 @@ form {
   padding: .8rem;
   width: 95%;
   max-width: 400px;
-  margin: -1rem 2% 2erem 2%;
+  margin: 1rem 2% 2rem 2%;
   box-shadow: 1px 1px 4px #999;
 
   
@@ -481,6 +482,17 @@ input#form-button {
 }
 
 
+#Greeting {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+#Greeting::after {
+  content: " ☑️";
+  display: inline-block;
+  margin-left: 5px; /* Optional: Add some space between the text and the checkmark */
+}
 /*SUPPORT PAGE ^/
 
 

@@ -17,7 +17,7 @@
     }
     
     nav {
-        color: active;
+        color: var(--active);
         max-width: 100%;
         margin: 1rem auto;
         width: 100vh;
