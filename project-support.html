@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/project-large.css" />
     <script src="scripts/project.js" defer></script>
     <script src="scripts/js-project-product.js" defer></script>
+    <script src="scripts/js-project-support.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -38,47 +39,45 @@
     </header>
     
   <main>
-            
-            <div class="main_part">
-            <!--
-            <img
-              class="main_img"
-              src="images/project-images/rsz_nuevo_home_page_499.webp"
-              alt="Home image"
-            />
-             -->
+ 
+        <h1 id="title-form">Request for contact for more information</h1>
+       
+        <form method = "get" action="counter.html"  class="wf1">
+        <div id="form-before-submit">
+        <fieldset>
+            <legend>Applicant Information</legend>
+            <label> First Name* <input type="text" name="fname" required></label>
+            <label> Last Name* <input type="text" name="lname" required></label>
+            <label> Phone <input type="tel" name="phone" placeholder="1234567890"></label>
+            <label> Email* <input type="email" name="email" required placeholder="someone"></label>
+            <label> Website <input type="url" name="url" placeholder="httpss://"></label>
+        </fieldset>
+       
 
-            <picture class="main_img">
-                <source srcset="images/project-images/rsz_nuevo_home_page_1300.webp" media=(min-width:1000px)>
-                <source srcset="images/project-images/rsz_nuevo_home_page_1000.webp" media=(min-width:550px)>
-                <img src="images/project-images/rsz_nuevo_home_page_499.webp" srcset="images/project-images/rsz_nuevo_home_page_499.webp 500w, images/project-images/rsz_nuevo_home_page_1000.webp 1000w"
-                sizes="50vw"
-                alt ="Home Image">
-            </picture>
-           
+        <fieldset>   
+        <label> Product your are interested in
+            <select name="Product you are interested in">
+                <option value="Product">Trainers &#9662;</option>  <!-- El &#... coloca la flechita de dropdown justo después de la palabra select --> 
+                <option value="Product">Investors</option>
+                <option value="Product">Suppliers</option>
+               
+            </select>        
+        </label>        
+        </fieldset>
+
+        <fieldset>
+            <legend>Where are you located?</legend>
         
-    
-            <div class="main_text">
-                <p><span class="subtitle">More than 15 years of experience</span>
-                  in commercial business management allow us to identify the value
-                  of the company's information made available to its stakeholders.
-                </p>
-               <p><span class="subtitle">We help you display your data</span>
-                  to your audience of interest through web sites and obtain valuable
-                  insights for decision making.
-                </p>
-              </div>
+           <label> <input type="radio" name="location" value="in">In Bogotá </label>
+           <label> <input type="radio" name="location" value="outside">Outside Bogotá </label>
+          
+        </fieldset>
+
         </div>
-    
-            <div class="second_part">
-              <section class="call_to_Action">
-                <div class="button-box">
-                  <a class="call_msg" href="contactus.html"
-                    >I want more information</a
-                  >
-                </div>
-              </section>
-            </div>
+        <input id="form-button" type="submit" value="Send my contact request">
+
+        </form>      
+
   </main>
     
 

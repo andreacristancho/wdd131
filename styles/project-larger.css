@@ -40,6 +40,8 @@
         color: var(--active);
       }
 
+
+
     .main_part {
         margin: 100px;
     }
@@ -50,8 +52,8 @@
 
     .main_part .main_text  {
         max-width: 45%;
-        margin: 20px;
-        font-size: 3rem;
+        margin: 40px;
+        font-size: 2rem;
     }
 
  
