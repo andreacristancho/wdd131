@@ -1,0 +1,58 @@
+@media screen and (min-width: 1000px) {
+
+    body {
+    
+        min-width: 1000px;
+        
+      }
+    header {
+      width: 100%;
+      height: auto;
+    
+  
+    }
+    header h1 {
+      display: flex;
+      font-size: 3rem;
+    }
+    
+    nav {
+        color: active;
+        max-width: 100%;
+        margin: 1rem auto;
+        width: 100vh;
+       
+      }
+
+    nav .ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        
+      }
+    nav .ul li a {
+        display: flex;
+        flex-direction: row;
+        padding: 5px;
+        margin: 10px;
+        font-size: 1.2rem;
+        text-align:end;
+        color: var(--active);
+      }
+
+    .main_part {
+        margin: auto;
+    }
+    .main_part .main_img {
+        max-width: 45%;
+        margin: 20px;
+    }
+
+    .main_part .main_text {
+        max-width: 45%;
+        margin: 20px;
+    }
+
+
+
+}
