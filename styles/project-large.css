@@ -1,4 +1,4 @@
-@media screen and (min-width: 1000px) {
+@media (min-width: 1000px) {
 
     body {
     
@@ -41,23 +41,21 @@
       }
 
 
-
-    .main_part {
-        margin: 100px;
-    }
-    .main_part .main_img {
-        max-width: 45%;
-        margin: 20px;
-    }
-
-    .main_part .main_text  {
-        max-width: 45%;
-        margin: 40px;
-        font-size: 2rem;
-    }
-
  
+/* PRODUCT PAGE */
+
+  
+
+#products {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+
+
 
 
 
 }
+
