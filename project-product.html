@@ -81,6 +81,34 @@
 
   
       </table>
+
+
+      <form id="evaluationForm">
+        <h2>Quick Skills Assessment </h2>
+        <label for="experience">How many years of experience do you have in your role?</label>
+        <select id="experience" name="experience" required>
+            <option value="" disabled selected>Select an option</option>
+            <option value="1">0-2 years</option>
+            <option value="2">3-5 years</option>
+            <option value="3">More than 5 years</option>
+        </select>
+
+        <label for="engagement">How much time can you dedicate to our platform on a weekly basis?</label>
+        <select id="engagement" name="engagement" required>
+            <option value="" disabled selected>Seleect an option</option>
+            <option value="1">Less than one hour</option>
+            <option value="2">1-3 hours</option>
+            <option value="3">More than 3 hourss</option>
+        </select>
+
+        <button type="button" onclick="evaluateForm()">Send</button>
+
+        <p id="result"></p>
+    
+    </form>
+
+    
+
       
 
         <div class="second_part">

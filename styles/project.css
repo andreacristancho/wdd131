@@ -242,6 +242,7 @@ p {
     font-size: 1rem;
   }
   
+
   footer p {
     background-color: var(--primary);
     margin: 0;
@@ -339,6 +340,7 @@ article img {
     margin-left: 10px;
     margin-right: 10px;
     width: 100%;
+    margin-bottom: 50px;
   }
   
 
@@ -365,7 +367,8 @@ article img {
         }
 
       tr:nth-last-child(1) {
-            background-color: var(--secundary);
+            background-color: white;
+            color: var(--primary)
         }
     
 
@@ -380,6 +383,75 @@ article img {
       font-size: 1.2rem;
     }
   
+
+
+
+  /* Form interactivo - Product page */
+
+  form h2 {
+    color: var(--secundary);
+    text-align: center;
+    padding-bottom: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+  }
+
+  form h2::before {
+    content: " ♦️ ";
+  }
+
+  form h2::after {
+    content: " ♦️ ";
+  }
+  form {
+    background-color: white;
+    max-width: 490px;
+    margin: 50px;
+    padding: 1rem;
+    background: #f9f9f9;
+    border-radius: 1px solid var(--primary);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    font-family:Arial, Helvetica, sans-serif;
+  }
+
+  #evaluationForm {
+    background-color: white;
+  }
+label, input, select, button {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+    font-size: 1.3rem;
+    padding-left: 10px;
+    color: #555;
+   
+}
+button {
+    background: var(--secundary);
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+#result {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2rem;
+
+}
+  #result::before {
+    content:"👉  ";
+    font-size: 1.5rem;
+  }
+
+
+
+
+
+
 
 /* END PRODUCT PAGE */
 
