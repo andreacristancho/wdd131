@@ -40,7 +40,7 @@ header {
 }
 
 header h1 {
-    color: var(--headers-color);
+    color: white;
     margin: 10px;
     padding-left: 20px;
     display: flex;
@@ -332,7 +332,8 @@ article img {
   }
 
   table {
-    width: 400px;
+    width: 100%;
+    max-width: 100%;
     border-collapse: collapse;
     border: 2px solid var(--primary);
     letter-spacing: 1px;
@@ -442,10 +443,7 @@ button {
   font-size: 1.2rem;
 
 }
-  #result::before {
-    content:"👉  ";
-    font-size: 1.5rem;
-  }
+
 
 
 
