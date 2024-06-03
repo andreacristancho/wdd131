@@ -561,10 +561,13 @@ input#form-button {
   display: inline-block;
   margin-left: 5px; /* Optional: Add some space between the text and the checkmark */
 }
-/*SUPPORT PAGE ^/
+/*SUPPORT PAGE ^/*/
 
 
-
+#counter {
+  margin-bottom: 50px;
+  color: #003049;
+}
 
 
 
