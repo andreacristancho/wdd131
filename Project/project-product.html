@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Andrea Cristamcho</title>
+    <meta name="description" content="Project Andrea Cristancho" />
+    <meta name="author" content="Andrea Fernanda Cristancho Cortés" />
+    <link rel="stylesheet" href="styles/project.css" />
+    <link rel="stylesheet" href="styles/project-large.css" />
+    <script src="scripts/project.js" defer></script>
+    <script src="scripts/js-project-product.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+
+<body>
+
+    <header >       
+        <h1>Share my Data</h1>
+        <nav>
+         
+          <button id="menu"></button>
+          <ul class="ul">
+            <li><a href="project.html">Home</a></li>
+            <li><a href="project-product.html">Products</a></li>
+            <li><a href="project-support.html">Support</a></li>
+          </ul>
+        </nav>
+    </header>
+    
+  <main>
+   
+        <h2 id="homeTitle">Products</h2>
+        <div id="products-box">
+        <div id="products"></div>
+        </div>
+         
+        <table>
+          <thead>
+              <tr>
+                  <th colspan="4">Share my Data product features</th>
+              </tr>
+              <tr>
+                 <td class="blank"></td>
+                  <th>Trainers</th>
+                  <th>Investors</th>
+                  <th>Suppliers</th>
+              </tr>
+          </thead>
+  
+          <tbody>
+              <tr>
+                  <th>Digital Certificate</th>
+                  <td>✔︎</td>
+                  <td>✔︎</td>
+                  <td>✔︎</td>
+              </tr>
+              <tr>
+                  <th>Monthly Fee</th>
+                  <td>❌</td>
+                  <td>✔︎</td>
+                  <td>✔︎</td>
+  
+              </tr>
+              <tr>
+                  <th> Licensed Software</th>
+                  <td>❌</td>
+                  <td>❌</td>
+                  <td>✔︎</td>
+              </tr>
+             
+          </tbody>
+
+  
+      </table>
+
+
+      <form id="evaluationForm">
+        <h2>Quick Skills Assessment </h2>
+        <label for="experience">How many years of experience do you have in your role?</label>
+        <select id="experience" name="experience" required>
+            <option value="" disabled selected>Select an option</option>
+            <option value="1">0-2 years</option>
+            <option value="2">3-5 years</option>
+            <option value="3">More than 5 years</option>
+        </select>
+
+        <label for="engagement">How much time can you dedicate to our platform on a weekly basis?</label>
+        <select id="engagement" name="engagement" required>
+            <option value="" disabled selected>Seleect an option</option>
+            <option value="1">Less than one hour</option>
+            <option value="2">1-3 hours</option>
+            <option value="3">More than 3 hourss</option>
+        </select>
+
+        <button type="button" onclick="evaluateForm()">Send</button>
+
+        <p id="result"></p>
+    
+    </form>
+
+    
+
+      
+
+        <div class="second_part">
+          <section class="call_to_Action">
+            <div class="button-box">
+              <a class="call_msg" href="project-support.html"
+                >I want more information</a
+              >
+            </div>
+          </section>
+        </div>
+
+   
+  </main>
+    
+
+  <footer>
+    <p>
+      <span id="currentYear"></span>
+      Andrea Fernanda Cristancho. Colombia
+    </p>
+    <p id="lastModified"></p>
+  </footer>
+
+</body>
+</html>

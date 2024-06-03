@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Andrea Cristamcho</title>
+    <meta name="description" content="Project Andrea Cristancho" />
+    <meta name="author" content="Andrea Fernanda Cristancho Cortés" />
+    <link rel="stylesheet" href="styles/project.css" />
+    <link rel="stylesheet" href="styles/project-large.css" />
+    <script src="scripts/project.js" defer></script>
+    <script src="scripts/js-project-product.js" defer></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+
+<body>
+
+    <header >       
+        <h1>Share my Data</h1>
+        <nav>
+         
+          <button id="menu"></button>
+          <ul class="ul">
+            <li><a href="project.html">Home</a></li>
+            <li><a href="project-product.html">Products</a></li>
+            <li><a href="project-support.html">Support</a></li>
+          </ul>
+        </nav>
+    </header>
+    
+  <main>
+            
+            <div class="main_part">
+            <!--
+            <img
+              class="main_img"
+              src="images/project-images/rsz_nuevo_home_page_499.webp"
+              alt="Home image"
+            />
+             -->
+
+            <picture class="main_img">
+                <source srcset="images/project-images/rsz_nuevo_home_page_1300.webp" media=(min-width:1000px)>
+                <source srcset="images/project-images/rsz_nuevo_home_page_1000.webp" media=(min-width:550px)>
+                <img src="images/project-images/rsz_nuevo_home_page_499.webp"  loading="lazy" srcset="images/project-images/rsz_nuevo_home_page_499.webp 500w, images/project-images/rsz_nuevo_home_page_1000.webp 1000w"
+                sizes="50vw"
+                alt ="Home Image">
+            </picture>
+           
+        
+    
+            <div class="main_text">
+                <p><span class="subtitle">More than 15 years of experience</span>
+                  in commercial business management allow us to identify the value
+                  of the company's information made available to its stakeholders.
+                </p>
+               <p><span class="subtitle">We help you display your data</span>
+                  to your audience of interest through web sites and obtain valuable
+                  insights for decision making.
+                </p>
+              </div>
+        </div>
+    
+      
+
+            <div class="second_part">
+              <section class="call_to_Action">
+                <div class="button-box">
+                  <a class="call_msg" href="project-support.html"
+                    >I want more information</a
+                  >
+                </div>
+              </section>
+            </div>
+  </main>
+    
+
+  <footer>
+    <p>
+      <span id="currentYear"></span>
+      Andrea Fernanda Cristancho. Colombia
+    </p>
+    <p id="lastModified"></p>
+  </footer>
+
+</body>
+</html>
