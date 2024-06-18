@@ -27,6 +27,9 @@
     background-color: var(--primary);
     width: 100%;
   }
+  header {
+    display: inline;
+  }
   
   main h2 {
     font-family: "Roboto", sans-serif;
@@ -42,7 +45,7 @@
     margin: 30px;
   }
   h1 {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     background-color: #003049;
     color: white;
     padding: 5%;
@@ -131,6 +134,11 @@
     object-fit: cover;
     width: 100%;
     height: 250px;
+    
+}
+#temples article  {
+margin-bottom: 30px;
+  
 }
 
 /*h3, pLocation, pDedication, pArea, picTemple*/
@@ -178,4 +186,20 @@ article img {
 }
 
 
+@media (min-width: 550px) {
 
+#Home, #Old, #New, #Large, #Small {
+  font-size: 1.5rem;
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+#temples {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+}
+}
